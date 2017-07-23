@@ -1,0 +1,106 @@
+Recursion
+
+1. In your own words, what is recursion?
+
+Answer: Recursion is a programming technique in which a function calls itself one or more 
+times in the body of the function. The function is called a recursive function and it 
+returns the return value of the function call. As the function goes deeper down and calls 
+itself, these successive functions get added to the call stack. The innermost function 
+calls are returned first. Recursive functions need a base case, so that they know when to
+terminate and start returning the function calls in reverse order that they are added to the call stack. 
+
+
+
+2. Why is it necessary to have a base case?
+
+Answer: It is necessary to have a base case so that the recursive function knows when to stop and
+the function calls can be returned in reverse order in which they are placed on the call stack.
+A base case acts as a limiting factor, so that the recurisve function does not keep calling itself over and 
+over or until the maximum recursion depth has exceeded. 
+
+
+Graphs
+
+1. What is a graph?
+
+Answer: Graphs are data structures which consist of networks of nodes connected by arcs or edges. 
+Graphs are similar to trees, however graphs have loops. Graphs may be directed or undirected. Each node in 
+a graph has an adjacency list, which is a list of every node that it is directly connected to. The edges connecting
+the nodes may have an optional weight characteristic which quantifies some aspect of the relationship.
+
+
+2. How is a graph different from a tree?
+
+Answer: Graphs contain cycles or loops wheareas trees are a special type of graph with only one path between two nodes. 
+Trees have a root node and every child node can have only one parent node. Graphs do not have a root node or a 
+parent-child relationship between nodes. The nodes in a tree have a hierarchical order. There is no such order 
+between the nodes in a graph. Graphs can be cyclic or acyclic, whereas trees are directed, acyclic graphs. 
+
+
+3. Give an example of something that would be good to model with a graph.
+
+Answer: Relationships between friends on a social network is a good example of a graph model. Each person/friend
+can be considered a node and they are linked to other friends(nodes) through edges or arcs. Each node can be connected to many
+other nodes as each person can have multiple friends. Also since the friend relationship is mutual, this is an undirected, acyclic
+graph. 
+
+
+Performance of Different Data Structures
+
+Data Structure                  Index   Search  Add-R   Add-L   Pop-L   Pop-R
+
+Python List (Array)             O(1)    O(n)    O(1)    O(n)     O(n)   O(1)
+Linked List                     O(n)    O(n)    O(1)*   O(1)     O(1)   O(n)
+Doubly-Linked List              O(n)    O(n)    O(1)    O(1)     O(1)   O(1)
+Queue (as Array)                X       X       O(1)     X       O(n)     X
+Queue (as LL or DLL)            X       X       O(1)*    X       O(1)     X
+Stack (as Array, LL, or DLL)    X       X       O(1)     X        X      O(1)
+Deque (as DLL)                  X       X       O(1)    O(1)     O(1)    O(1)
+
+
+* This is assuming that we are keeping track of the tail for a linked list. 
+
+
+
+Data Structure          Get     Add     Delete  Iterate     Memory
+
+Dictionary (Hash Map)   O(1)    O(1)     O(1)    O(n)       medium
+Set (Hash Map)          O(1)    O(1)     O(1)    O(n)       medium
+Binary Search Tree     O(logn)  O(logn)  O(logn) O(n)       low  
+Tree                   O(n)     O(1)*     O(1)*  O(n)       low
+
+* If you already have the pointer to the parent node. 
+
+
+Sorting
+
+1. Describe in words how the Bubble Sort algorithm works.
+
+Answer: The Bubble sort algorithm makes multiple passes through a list. At each pass, it compares adjacent items and 
+swaps them if they are out of order, with the larger item being pushed to the right. At the end of the first pass, 
+the biggest item will be on the right end. This continues until each item "bubbles" to its correct location and
+all items are sorted.
+
+
+2. Describe in words how the Merge Sort algorithm works.
+
+Answer: Merge sort uses a divide and conquer strategy. It is an algorithm which uses recursion to split a list in
+half until we reach a list of length 1. A list of length 1 is sorted. Once this is achieved, we can "merge" the lists. 
+This is done by comparing the item in each pair of sorted lists and adding the items in order to a result list. 
+In this way, each of the smaller sorted lists are combined into a single sorted new list. 
+
+
+3. Describe in words how the Quick Sort algorithm works.
+
+Answer: Quick sort also uses the divide and conquer strategy. This algorithm first selects a value called the pivot
+value which is usually randomly chosen. The pivot serves as a partition to split the list, with all items lower
+than the pivot being moved to the left and all items greater than the pivot being moved to the right. In each of the 
+right and left halves, another pivot is selected and the list items are again split based on whether they are higher or lower
+than the pivot. This continues until all the items in the list are sorted.
+
+
+
+
+
+
+

@@ -40,8 +40,9 @@ between the nodes in a graph. Graphs can be cyclic or acyclic, whereas trees are
 3. Give an example of something that would be good to model with a graph.
 
 Answer: Relationships between friends on a social network is a good example of a graph model. Each person/friend
-can be considered a node and they are linked to other friends(nodes) through edges or arcs. Each node can be connected to many
-other nodes as each person can have multiple friends. Also since the friend relationship is mutual, this is an undirected, acyclic
+can be considered a node and they are linked to other friends(nodes) through edges or arcs. Each node can be connected 
+to many other nodes as each person can have multiple friends. Also since the friend relationship is mutual, this is an 
+undirected, acyclic
 graph. 
 
 
@@ -95,8 +96,8 @@ In this way, each of the smaller sorted lists are combined into a single sorted 
 Answer: Quick sort also uses the divide and conquer strategy. This algorithm first selects a value called the pivot
 value which is usually randomly chosen. The pivot serves as a partition to split the list, with all items lower
 than the pivot being moved to the left and all items greater than the pivot being moved to the right. In each of the 
-right and left halves, another pivot is selected and the list items are again split based on whether they are higher or lower
-than the pivot. This continues until all the items in the list are sorted.
+right and left halves, another pivot is selected and the list items are again split based on whether they are higher 
+or lower than the pivot. This continues until all the items in the list are sorted.
 
 
 
